@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color:hsl(217, 54%, 11%);
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 300px;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: hsl(216, 50%, 16%);
+    overflow: hidden;
+    box-shadow: 0px 0px 20px #0C1729, 0px 0px 40px #0C192C;
+}
+
+.card__image {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: url(../images/image-equilibrium.jpg) center;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.image__icon {
+    opacity: 0;
+    z-index: 1;
+}
+
+.card__image::before {
+    content: "";
+    position: absolute;
+    width: 100%; height: 100%;
+    background-color: hsla(178, 100%, 50%, 0.5);
+    opacity: 0;
+    transition-duration: .4s;
+}
+
+.card__image:hover::before, .card__image:hover .image__icon{
+    opacity: 1;
+}
+
+.card__title {
+    width: 100%;
+    text-align: start;
+    color: hsl(0, 0%, 100%);
+    margin: 25px 0 20px;
+    font-size: 22px;
+    cursor: pointer;
+    transition-duration: .4s;
+}
+
+.card__title:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.card__text {
+    width: 100%;
+    text-align: start;
+    color: hsl(215, 51%, 70%);
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+.card__info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.info__element {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.price__text {
+    margin-left: 8px;
+    color: hsl(178, 100%, 50%);
+    font-weight: 600;
+}
+
+.time-left__text {
+    color: hsl(215, 51%, 70%);
+    margin-left: 8px;
+}
+
+.time-left__icon {
+    width: 16px;
+    height: 16px;
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: hsl(215, 32%, 27%);
+    margin: 20px 0;
+}
+
+.card__author {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.author__avatar {
+    width: 30px;
+    height: 30px;
+    border: 2px solid hsl(215, 51%, 70%);
+    border-radius: 50%;
+}
+
+.author__text {
+    color: hsl(215, 51%, 70%);
+    font-size: 16px;
+    margin-left: 20px;
+}
+
+.author__text--bold {
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition-duration: .4s;
+    text-decoration: none;
+}
+
+.author__text--bold:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.attribution {
+    position: absolute;
+    bottom: 10px; left: auto;
+    color: hsl(0, 0%, 100%);
+}
+
+.attribution__text {
+    color: hsl(178, 100%, 50%);
+    text-decoration: none;
+}
