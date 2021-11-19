@@ -35,7 +35,7 @@ body {
     height: 300px;
     border-radius: 10px;
     cursor: pointer;
-    background: url(../images/image-equilibrium.jpg) center;
+    background: url(./images/image-equilibrium.jpg) center;
     background-size: contain;
     overflow: hidden;
 }
