@@ -35,7 +35,7 @@ body {
     height: 300px;
     border-radius: 10px;
     cursor: pointer;
-    background: url(./images/image-equilibrium.jpg) center;
+    background-image: url(../images/image-equilibrium.jpg);
     background-size: contain;
     overflow: hidden;
 }
@@ -157,4 +157,13 @@ body {
 .attribution__text {
     color: hsl(178, 100%, 50%);
     text-decoration: none;
+}
+
+@media screen and (max-width: 400px){
+    body {
+        height: auto;
+    }
+    .card {
+        margin: 20px 0;
+    }
 }
