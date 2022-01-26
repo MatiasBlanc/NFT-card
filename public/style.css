@@ -167,3 +167,17 @@ body {
         margin: 20px 0;
     }
 }
+
+@media screen and (max-width: 420px) {
+    body {
+        background-color: hsl(216, 50%, 16%);
+    }
+
+    .card {
+        box-shadow: none;
+    }
+
+    .attribution {
+        display: none;
+    }
+}
